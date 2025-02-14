@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "auth_provider.homeassistant",
+  "data": {
+    "users": [
+      {
+        "username": "asron",
+        "password": "JDJiJDEyJHJJZnNvMkgyZWtIcHluUTF0N0FFeS5qNHM1cy9RV0xDd2pRZ0RTN2hUbzRsb1V4MlJrSVpX"
+      }
+    ]
+  }
+}

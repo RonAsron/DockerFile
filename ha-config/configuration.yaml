@@ -1,0 +1,38 @@
+version: "3.9"
+services:
+  homeassistant:
+    container_name: homeassistant
+    image: "ghcr.io/home-assistant/home-assistant:latest"
+    volumes:
+      - ./config:/config
+    restart: unless-stopped
+    ports:
+      - "8123:8123"
+    environment:
+      - TZ=Asia/Bangkok
+
+  frontend:
+    container_name: home-assistant-frontend
+    build: ./home-assistant-frontend
+    volumes:
+      - ./home-assistant-frontend:/app
+      - /app/node_modules
+    ports:
+      - "3000:3000"
+    environment:
+      - REACT_APP_HA_API_URL=http://homeassistant:8123  # เชื่อมต่อกับ Home Assistant ผ่านชื่อ service
+    depends_on:
+      - homeassistant
+
+  nginx:
+    image: nginx:latest
+    container_name: nginx_proxy
+    volumes:
+      - ./ha-config/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./ha-config/ssl:/etc/nginx/ssl  # ใช้ SSL
+    ports:
+      - "80:80"
+      - "443:443"
+    depends_on:
+      - homeassistant
+      - frontend

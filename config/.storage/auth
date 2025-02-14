@@ -1,0 +1,109 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "auth",
+  "data": {
+    "users": [
+      {
+        "id": "fe6914063aa44a538eb0f17696675548",
+        "group_ids": [
+          "system-read-only"
+        ],
+        "is_owner": false,
+        "is_active": true,
+        "name": "Home Assistant Content",
+        "system_generated": true,
+        "local_only": false
+      },
+      {
+        "id": "e9e055ee750f4f24820a3de2e9e0bc14",
+        "group_ids": [
+          "system-admin"
+        ],
+        "is_owner": true,
+        "is_active": true,
+        "name": "asron",
+        "system_generated": false,
+        "local_only": false
+      }
+    ],
+    "groups": [
+      {
+        "id": "system-admin",
+        "name": "Administrators"
+      },
+      {
+        "id": "system-users",
+        "name": "Users"
+      },
+      {
+        "id": "system-read-only",
+        "name": "Read Only"
+      }
+    ],
+    "credentials": [
+      {
+        "id": "240973cf754548568ad35f03d661838e",
+        "user_id": "e9e055ee750f4f24820a3de2e9e0bc14",
+        "auth_provider_type": "homeassistant",
+        "auth_provider_id": null,
+        "data": {
+          "username": "asron"
+        }
+      }
+    ],
+    "refresh_tokens": [
+      {
+        "id": "6fae67e2ac644095bfe6582d0ff7f4af",
+        "user_id": "fe6914063aa44a538eb0f17696675548",
+        "client_id": null,
+        "client_name": null,
+        "client_icon": null,
+        "token_type": "system",
+        "created_at": "2025-02-09T09:20:31.931835+00:00",
+        "access_token_expiration": 1800.0,
+        "token": "1471a74585bc89dc0982ce63501e06e75a12aea62013965f6eed605d0d222bd45adb16a38f1aebe16e9d756ceaf8f0386a210b42cf33005aa2eb7bd10871cea6",
+        "jwt_key": "37d3adb9fa8e72ff278733134d700e4674075af39ece540ad079653cc3187849d54a28d795af08f798bd681319657d68b640acb4858e7377a74501ca2644e0c1",
+        "last_used_at": null,
+        "last_used_ip": null,
+        "expire_at": null,
+        "credential_id": null,
+        "version": "2025.2.1"
+      },
+      {
+        "id": "218e9ff7bc4d48c487863476e06b8e38",
+        "user_id": "e9e055ee750f4f24820a3de2e9e0bc14",
+        "client_id": "http://localhost:8123/",
+        "client_name": null,
+        "client_icon": null,
+        "token_type": "normal",
+        "created_at": "2025-02-09T09:33:08.657753+00:00",
+        "access_token_expiration": 1800.0,
+        "token": "74f447c51228b5cd05753c3dd303a53a6a763077b44401247b649ab0e8753d95d02e2289bd08cd008517f4ca029a4c2504b99cc2c5af36d95ebad2c3d8000da8",
+        "jwt_key": "784bf1f09784bcbf5127d65b340f916c1e731781acedbc1cbe65b5209490aee25c34786d8d52e79851b65d4bd53297cad8a4539a328603ff6bb45f1c4d572fe0",
+        "last_used_at": "2025-02-14T14:37:49.969717+00:00",
+        "last_used_ip": "172.19.0.1",
+        "expire_at": 1747319869.969717,
+        "credential_id": "240973cf754548568ad35f03d661838e",
+        "version": "2025.2.1"
+      },
+      {
+        "id": "533dcb2bafe84f4b876d0243069c49b6",
+        "user_id": "e9e055ee750f4f24820a3de2e9e0bc14",
+        "client_id": null,
+        "client_name": "apiAssistant ",
+        "client_icon": null,
+        "token_type": "long_lived_access_token",
+        "created_at": "2025-02-09T10:17:30.411470+00:00",
+        "access_token_expiration": 315360000.0,
+        "token": "8a5d9c97462a6ac1e7756ff0f89f1ba5fac7e5ffede304d8aa5a1acddf2c0c8a211d0bb8f51eff86db63971967a38916bb6c4d54a1c2007788a85478c2e10c6d",
+        "jwt_key": "f1a06b9ed70ce1e546572c95b58f7ca2f7e01f77deb478260de74ba507e3964f4932a234505e3b01feba70039e15fc297f8421333897b132f9c7938c29e816e8",
+        "last_used_at": "2025-02-09T10:17:30.411651+00:00",
+        "last_used_ip": null,
+        "expire_at": null,
+        "credential_id": null,
+        "version": "2025.2.1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "minor_version": 1,
+  "key": "person",
+  "data": {
+    "items": [
+      {
+        "id": "asron",
+        "name": "asron",
+        "user_id": "e9e055ee750f4f24820a3de2e9e0bc14",
+        "device_trackers": [],
+        "picture": "/api/image/serve/d23a05be0cde8704bcf5a9c68cbe2973/512x512"
+      }
+    ]
+  }
+}
